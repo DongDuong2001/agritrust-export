@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1a1c1e;
+    background-color: #f9f9fc;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading, .font-display {
+    font-family: 'Be Vietnam Pro', 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-mono, .font-data {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom soft borders and elevation as specified in Design.md */
+.card-surface {
+  background-color: #ffffff;
+  border: 1px solid #e0e7e4;
+}
+
+.dark .card-surface {
+  background-color: #0f172a;
+  border-color: #1e293b;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(113, 121, 115, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(113, 121, 115, 0.6);
+}
+
+/* Print Styles for Certificate and Passport PDF Generation */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  nav, header, aside, #passport-back-btn, #view-in-buyer-portal-btn, #send-to-buyer-btn, #download-pdf-btn, #copy-hash-btn, #preview-controls-bar, .no-print {
+    display: none !important;
+  }
+
+  /* Full-page A4 Certificate Print */
+  .print-a4-target {
+    box-shadow: none !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 24px !important;
+    border: 2px solid #064e3b !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* 4x6 inch Thermal Bag Label Print */
+  .print-thermal-target {
+    box-shadow: none !important;
+    max-width: 100% !important;
+    width: 384px !important;
+    height: 576px !important;
+    margin: 0 auto !important;
+    padding: 16px !important;
+    border: 2px solid #000000 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .passport-certificate-card {
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    page-break-inside: avoid;
+  }
+
+  .print-a4-target *, .print-thermal-target *, .passport-certificate-card * {
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* Clean, static Leaflet GIS Map Styling without flashing or blinking */
+.logistics-corridor-line {
+  stroke-dasharray: 5, 5;
+}
+
+.key-region-polygon-daklak {
+  filter: drop-shadow(0 2px 6px rgba(16, 185, 129, 0.35));
+  stroke-linejoin: round;
+}
+
+.key-region-polygon-lamdong {
+  filter: drop-shadow(0 2px 6px rgba(168, 85, 247, 0.35));
+  stroke-linejoin: round;
+}
+
+.key-region-polygon-gialai {
+  filter: drop-shadow(0 2px 6px rgba(14, 165, 233, 0.35));
+  stroke-linejoin: round;
+}
+
+.key-region-label-daklak {
+  background: rgba(6, 78, 59, 0.95);
+  border: 1px solid #34d399;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.key-region-label-lamdong {
+  background: rgba(59, 7, 100, 0.95);
+  border: 1px solid #c084fc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.key-region-label-gialai {
+  background: rgba(8, 47, 73, 0.95);
+  border: 1px solid #38bdf8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.key-region-badge-compact {
+  transition: transform 0.15s ease-out;
+}
+
+.key-region-badge-compact:hover {
+  transform: translateY(-2px);
+}
+
+/* Custom Interactive Leaflet Tooltip for Regions */
+.leaflet-tooltip.custom-region-leaflet-tooltip {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.leaflet-tooltip.custom-region-leaflet-tooltip::before {
+  display: none !important;
+}
+
+.region-tooltip-card {
+  background: rgba(15, 23, 42, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.7), 0 0 20px -2px var(--tooltip-glow-color, rgba(16, 185, 129, 0.4));
+  border: 1.5px solid var(--tooltip-border-color, #10b981);
+  padding: 12px 14px;
+  min-width: 250px;
+  max-width: 320px;
+  color: #f8fafc;
+  pointer-events: none;
+  font-family: inherit;
+}
+
+
