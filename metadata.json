@@ -1,6 +1,0 @@
-{
-  "name": "AgriTrust Export",
-  "description": "Compliance and blockchain-verified export passport platform for Vietnamese coffee exporters selling to EU buyers under EUDR regulations.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

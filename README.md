@@ -1,7 +1,3 @@
-<div align="center">
-  <img width="1200" height="475" alt="AgriTrust Export Banner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
-
 # AgriTrust Export ☕⛓️
 
 AgriTrust Export is a compliance and blockchain-verified export passport platform tailored for Vietnamese coffee exporters selling to EU buyers under EUDR (European Union Deforestation Regulation) regulations.
@@ -31,14 +27,7 @@ AgriTrust Export is a compliance and blockchain-verified export passport platfor
    bun install
    ```
 
-2. **Environment Variables**:
-   Copy the `.env.example` file to `.env.local` and fill in your Gemini API key:
-   ```bash
-   cp .env.example .env.local
-   ```
-   Set `GEMINI_API_KEY` to your official Google AI Studio API key.
-
-3. **Run Dev Server**:
+2. **Run Dev Server**:
    ```bash
    npm run dev
    # or using Bun
