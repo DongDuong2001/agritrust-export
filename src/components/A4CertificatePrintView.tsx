@@ -219,7 +219,7 @@ export const A4CertificatePrintView: React.FC<A4CertificatePrintViewProps> = ({
         <div className="space-y-1">
           <div className="font-bold text-slate-900">AGRITRUST COMPLIANCE CONSORTIUM</div>
           <div className="text-[11px] text-slate-500">Cat Lai Port Logistics Zone, Ho Chi Minh City, Vietnam</div>
-          <div className="text-[10px] text-slate-400 font-mono">Verified under EU TRACES-NT Direct Gateway API</div>
+          <div className="text-[10px] text-slate-500 font-mono">Verified under EU TRACES-NT Direct Gateway API</div>
         </div>
 
         {/* Official Embossed Seal Stamp Mock */}

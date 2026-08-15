@@ -394,7 +394,7 @@ export const ExporterDashboard: React.FC<ExporterDashboardProps> = ({
         
         {/* Export Volume */}
         <div className="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xs">
-          <p className="text-xs font-bold text-slate-400 dark:text-slate-400 uppercase tracking-wider mb-1">
+          <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">
             {t('metricExportVolume')}
           </p>
           <p className="text-3xl font-bold text-slate-800 dark:text-white tracking-tight">
@@ -408,7 +408,7 @@ export const ExporterDashboard: React.FC<ExporterDashboardProps> = ({
 
         {/* Compliance Rate */}
         <div className="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xs">
-          <p className="text-xs font-bold text-slate-400 dark:text-slate-400 uppercase tracking-wider mb-1">
+          <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">
             {t('metricComplianceRate')}
           </p>
           <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 tracking-tight">
@@ -459,7 +459,7 @@ export const ExporterDashboard: React.FC<ExporterDashboardProps> = ({
 
         {/* EU Buyer Portals */}
         <div className="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xs">
-          <p className="text-xs font-bold text-slate-400 dark:text-slate-400 uppercase tracking-wider mb-1">
+          <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">
             {t('metricEuBuyerMatch')}
           </p>
           <p className="text-3xl font-bold text-blue-600 dark:text-blue-400 tracking-tight">

@@ -245,7 +245,7 @@ export const CompliancePassport: React.FC<CompliancePassportProps> = ({
                   <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-800 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950 px-2 py-0.5 rounded border border-emerald-300 dark:border-emerald-800">
                     EUDR Article 4 Due Diligence
                   </span>
-                  <span className="text-xs text-slate-400 font-mono">
+                  <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">
                     Ref #{shipment.eudrReference}
                   </span>
                 </div>
@@ -265,7 +265,7 @@ export const CompliancePassport: React.FC<CompliancePassportProps> = ({
                   <ShieldCheck size={20} className="flex-shrink-0" />
                 </div>
                 <div>
-                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                  <div className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                     AgriTrust Ledger
                   </div>
                   <div className="text-xs font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1">
@@ -282,7 +282,7 @@ export const CompliancePassport: React.FC<CompliancePassportProps> = ({
             {/* Section 1: Coffee Origin & Spec Details */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 p-3.5 rounded-lg bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/80 text-xs">
               <div>
-                <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                   {t('colId')}
                 </div>
                 <div className="font-mono font-bold text-slate-900 dark:text-white text-sm mt-0.5">
@@ -292,7 +292,7 @@ export const CompliancePassport: React.FC<CompliancePassportProps> = ({
               </div>
 
               <div>
-                <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                   {language === 'vi' ? 'Hợp Tác Xã & Vùng Trồng' : 'Origin & Cooperative'}
                 </div>
                 <div className="font-bold text-slate-900 dark:text-white text-xs mt-0.5">
@@ -302,7 +302,7 @@ export const CompliancePassport: React.FC<CompliancePassportProps> = ({
               </div>
 
               <div>
-                <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                   {language === 'vi' ? 'Giống & Khối Lượng' : 'Variety & Volume'}
                 </div>
                 <div className="font-bold text-slate-900 dark:text-white text-xs mt-0.5">
@@ -312,7 +312,7 @@ export const CompliancePassport: React.FC<CompliancePassportProps> = ({
               </div>
 
               <div>
-                <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                   {t('colBuyer')}
                 </div>
                 <div className="font-bold text-slate-900 dark:text-white text-xs mt-0.5">

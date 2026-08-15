@@ -246,15 +246,15 @@ export const RecentActivityLogs: React.FC<RecentActivityLogsProps> = ({
                     </p>
 
                     {/* Cryptographic Transaction Hash / Signer footer */}
-                    <div className="flex flex-wrap items-center gap-3 pt-1 text-[11px] text-slate-400">
+                    <div className="flex flex-wrap items-center gap-3 pt-1 text-[11px] text-slate-500 dark:text-slate-400">
                       <span className="inline-flex items-center gap-1">
                         <span className="font-medium text-slate-600 dark:text-slate-300">{log.actor}</span>
-                        <span className="text-slate-400">({log.actorRole})</span>
+                        <span className="text-slate-500 dark:text-slate-400">({log.actorRole})</span>
                       </span>
 
                       {log.txHash && (
                         <div className="flex items-center gap-1.5 font-mono text-[10px] bg-slate-100 dark:bg-slate-900/80 px-2 py-0.5 rounded border border-slate-200/80 dark:border-slate-800 text-slate-600 dark:text-slate-400">
-                          <span className="text-slate-400 font-sans">{t('activityTxHash')}:</span>
+                          <span className="text-slate-500 dark:text-slate-400 font-sans">{t('activityTxHash')}:</span>
                           <span className="truncate max-w-[130px] sm:max-w-[220px]">{log.txHash}</span>
                           <button
                             type="button"
@@ -301,7 +301,7 @@ export const RecentActivityLogs: React.FC<RecentActivityLogsProps> = ({
       </div>
 
       {/* Footer Audit Banner */}
-      <div className="p-3 bg-slate-50 dark:bg-slate-900/60 border-t border-slate-100 dark:border-slate-700 flex flex-wrap items-center justify-between text-[11px] text-slate-400 gap-2">
+      <div className="p-3 bg-slate-50 dark:bg-slate-900/60 border-t border-slate-100 dark:border-slate-700 flex flex-wrap items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 gap-2">
         <span className="flex items-center gap-1.5">
           <ShieldCheck size={13} className="text-emerald-600 dark:text-emerald-400" />
           <span>{language === 'vi' ? 'Mỗi sự kiện được ký điện tử và lưu trữ bất biến trên AgriTrust EUDR Ledger' : 'All events cryptographically signed and anchored to AgriTrust EUDR Ledger'}</span>

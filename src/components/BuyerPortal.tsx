@@ -166,7 +166,7 @@ export const BuyerPortal: React.FC<BuyerPortalProps> = ({
 
                 <div className="space-y-0.5">
                   <div className="flex items-center justify-center md:justify-start gap-1.5">
-                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-400">
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                       {language === 'vi' ? 'Trạng Thái Thẩm Định EUDR' : 'EUDR Verification Status'}
                     </span>
                   </div>
@@ -188,7 +188,7 @@ export const BuyerPortal: React.FC<BuyerPortalProps> = ({
               {/* Status Pill & Actions */}
               <div className="flex flex-col items-center md:items-end gap-1.5 flex-shrink-0">
                 <div className="text-right">
-                  <div className="text-[10px] text-slate-400 font-mono">{t('dueDiligenceRef')}</div>
+                  <div className="text-[10px] text-slate-500 dark:text-slate-400 font-mono">{t('dueDiligenceRef')}</div>
                   <div className="text-xs font-mono font-bold text-slate-900 dark:text-white">
                     {selectedShipment.eudrReference}
                   </div>
@@ -258,7 +258,7 @@ export const BuyerPortal: React.FC<BuyerPortalProps> = ({
                       <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
                         {language === 'vi' ? 'Giai đoạn' : 'Stage'} {item.step}: {item.stage}
                       </span>
-                      <span className="text-[11px] font-mono text-slate-400">
+                      <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400">
                         {item.date}
                       </span>
                     </div>

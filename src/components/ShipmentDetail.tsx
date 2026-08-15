@@ -138,21 +138,21 @@ export const ShipmentDetail: React.FC<ShipmentDetailProps> = ({
           {/* Quick Metrics */}
           <div className="flex items-center gap-4 bg-slate-50 dark:bg-slate-900/60 p-3 rounded-lg border border-slate-200 dark:border-slate-700 text-xs">
             <div>
-              <div className="text-[10px] text-slate-400 uppercase font-bold">{t('colVolume')}</div>
+              <div className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold">{t('colVolume')}</div>
               <div className="text-sm font-bold font-mono text-slate-900 dark:text-white">
                 {shipment.volumeKg.toLocaleString()} kg
               </div>
             </div>
             <div className="w-px h-6 bg-slate-200 dark:bg-slate-700" />
             <div>
-              <div className="text-[10px] text-slate-400 uppercase font-bold">{t('cuppingScore')}</div>
+              <div className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold">{t('cuppingScore')}</div>
               <div className="text-sm font-bold text-emerald-700 dark:text-emerald-400">
                 {shipment.cuppingScore} pts
               </div>
             </div>
             <div className="w-px h-6 bg-slate-200 dark:bg-slate-700" />
             <div>
-              <div className="text-[10px] text-slate-400 uppercase font-bold">{t('deforestationRisk')}</div>
+              <div className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold">{t('deforestationRisk')}</div>
               <div className="text-sm font-bold text-emerald-700 dark:text-emerald-400">
                 0.0% (Zero)
               </div>
@@ -249,7 +249,7 @@ export const ShipmentDetail: React.FC<ShipmentDetailProps> = ({
                         </p>
 
                         {item.referenceCode && (
-                          <div className="pt-0.5 flex items-center gap-2 text-[11px] font-mono text-slate-400">
+                          <div className="pt-0.5 flex items-center gap-2 text-[11px] font-mono text-slate-500 dark:text-slate-400">
                             <span>{t('refCode')} {item.referenceCode}</span>
                             {item.updatedAt && <span>• {t('updated')} {item.updatedAt}</span>}
                           </div>

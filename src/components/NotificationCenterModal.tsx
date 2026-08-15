@@ -402,7 +402,7 @@ export const NotificationCenterModal: React.FC<NotificationCenterModalProps> = (
                             </span>
                           )}
 
-                          <span className="text-[11px] text-slate-400 dark:text-slate-500 flex items-center gap-1 ml-auto">
+                          <span className="text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-1 ml-auto">
                             <Clock size={11} />
                             <span>{language === 'vi' ? notif.timeAgoVi : notif.timeAgo}</span>
                           </span>
