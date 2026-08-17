@@ -544,13 +544,6 @@ export const ExporterDashboard: React.FC<ExporterDashboardProps> = ({
                       : (missingCount > 0 ? `Batch Auto-Verify (${missingCount})` : 'Batch Auto-Verify')}
                   </span>
                 </button>
-
-                <button
-                  onClick={onOpenNewShipmentModal}
-                  className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold text-xs shadow-xs transition-all active:scale-95 cursor-pointer whitespace-nowrap"
-                >
-                  {t('btnNewShort')}
-                </button>
               </div>
             </div>
 
